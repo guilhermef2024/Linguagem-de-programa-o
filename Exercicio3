@@ -1,0 +1,77 @@
+package Atividades;
+import java.util.Scanner;
+
+public class Exercicio03 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite um dia da semana de 1 a 7: ");
+		
+		int numero = scanner.nextInt();
+		
+		String diaSemana;
+		
+		
+		
+		switch (numero) {
+		
+	case 1:
+			
+		diaSemana = "Domingo, é final de semana";
+			
+		break;
+		
+		
+	case 2:
+		
+		diaSemana = "Segunda-feira, é um dia útil";
+		
+		break;
+		
+	case 3:
+		
+		diaSemana = "Terça-feira, é um dia útil";
+		
+		break;
+		
+	case 4:
+	
+	diaSemana = "Quarta-feira, é um dia útil";
+	
+		break;
+	
+	case 5:
+	
+	diaSemana = "Quinta-feira, é um dia útil";
+	
+		break;
+	
+	case 6:
+		
+		diaSemana = "Sexta-feira, é um dia útil";
+		
+		break;
+		
+	case 7:
+		
+		diaSemana = "Sábado, é final de semana";
+		break;
+	
+		
+	default:
+		diaSemana = "dia inválido";
+	break;
+		}
+	
+	System.out.println("O dia da semana que corresponde ao número " + numero + " é "+ diaSemana );
+		scanner.close();
+
+}
+}
+		
+		
+		
+		
+	
+	
+
