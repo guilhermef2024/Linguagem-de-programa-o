@@ -1,0 +1,33 @@
+package Atividades;
+import java.util.Scanner; 
+
+public class Exercicio01 {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		//declarando um número.
+		
+		System.out.print("Digite um número: ");
+		
+		int numero = scanner.nextInt();
+		
+		if(numero > 0) {
+			System.out.println("O número é positivo");
+		}
+		
+		else {
+			if (numero < 0)
+				System.out.println("O número é negativo");
+		}
+			
+		{ 
+			if(numero == 0)		
+				
+			System.out.println("O número é igual a zero");
+			scanner.close();
+		}
+		
+		
+	}
+}
