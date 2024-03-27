@@ -1,0 +1,27 @@
+package Atividades;
+import java.util.Scanner;
+
+public class Exercicio04 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite um número inteiro positivo e calcule o fatorial: ");
+		int numero = scanner.nextInt();
+		
+		int fatorial = 1;
+		int contador = 1;
+		
+		
+		
+		while (contador <= numero) {
+			fatorial *= contador;
+			contador++;
+		}
+		
+		System.out.println("O resultado do cálculo fatorial é: " + fatorial);
+		scanner.close();
+
+			
+		
+	}
+}
