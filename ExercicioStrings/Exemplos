@@ -1,0 +1,152 @@
+package Strings;
+
+public class ExemplosString {
+	public static void main(String[] args) {
+		
+		
+		// 1.2
+		
+		String stringLiteral = "Minha string";
+		
+		// 1.3
+		
+		char[] caracteres = {'M', 'i', 'n', 'h', 'a', ' '
+							, 'S', 't', 'r', 'i', 'n', 'g'};
+		String stringFromArray = new String(caracteres);
+		String outraString = new String("Isso é outra string");
+		
+		// EXEMPLO 01 - STRING IMUTABILIDADE
+		
+		String original = "Hello";
+		String strConcatenada = original + " World";
+		String strMaiuscula = original.toUpperCase();
+		System.out.println("String original: " + original +
+						   "\nString concatenada: " + strConcatenada +
+						   "\nString maiscula: " + strMaiuscula +
+						   "\nString original apos modificar: " + original);
+		
+		// MÉTODOS DE STRING
+		
+		
+		// 1 - OBTER TAMANHO DA STRING
+		
+		String minhaString = "Exemplo de String";
+		int tamanhoMinhaString = minhaString.length(); // 17
+		
+		
+		// 2 - ACESSO A CARACTERES INDIVIDUAIS
+		
+		String minhaString = "EXEMPLO";
+				
+		char primeiroCaractere = minhaString.charAt(0); // E
+		char terceiroCaractere = minhaString.charAt(2); // e
+		
+		
+		// 3 - PESQUISA E SUBSTITUIÇÃO
+		
+		// indexOf(String str)
+		
+		String minhaString = "Exemplo de String";
+		
+		int indice = minhaString.indexOf("String"); // 11
+		int indice2 = minhaString.indexOf("Java"); // -1
+		
+		// REPLACE(char antigo, char novo)
+		
+		String minhaString2 = "Substituir todos os 'a' por 'X'.";
+		String novaString = minhaString2.replace("a", "X"); // "Substituir todos os 'X' por 'X'."
+		
+		// 4 - CONVERSÃO DE MAIÚSCULAS E MINÚSCULAS
+		
+		String minhaString = "Texto de Exemplo";
+		
+		String emMaiusculas = minhaString.toUpperCase(); // "TEXTO DE EXEMPLO"
+		String emMinusculas = minhaString.toLowerCase(); // "texto de exemplo"
+		
+		// 5 - QUEBRA DE STRING EM PARTES
+		
+		
+		String minhaString = "Maca,  Banana, Cereja, Damasco";
+		String[] partes = minhaString.split(",");
+		
+		for (String parte : partes) {
+			System.out.println(parte);
+		}
+		
+		
+		// UTILIZANDO SUBSTRING
+		
+		String texto = "Exemplo de substring";
+		String sub = texto.substring(8, 15); // "de subs"
+		
+		
+		// 6 - COMPARAÇÃO DE STRINGS
+		
+		// equals(String str)
+		
+		String strl = "Hello";
+		String str2 = "World";
+		String str3 = "Hello";
+		boolean saolguaisl = strl.equals(str2); // false
+		boolean saoIlguais2 = strl.equals(str3); // true 
+		
+		
+		// equalsIgnoreCase(String str)
+		
+		String str1 = "Hello";
+		String str2 = "hello";
+		
+		boolean saolguais = str1.equalsIgnoreCase(str2); // true
+		
+		// starsWith(String prefixo) e endsWith(String sufixo)
+		
+		String minhaString = "Ola, mundo";
+		boolean comecaComOla = minhaString.startsWith("Ola"); // true
+		boolean terminaComMundo = minhaString.endsWith("Mundo"); // false
+		
+		
+		// 7 - FORMATAÇÃO DE STRINGS
+		
+		// Substituição de valores em uma String com String.format():
+		
+		
+		String nome = "Alice";
+		int idade = 30;
+		
+		String mensagem = String.format(" Ola, meu nome e %s e eu tenho %d anos", nome, idade);
+		
+		// Formatação de números decimais
+		
+		double valor = 123.456789;
+		String valorFormatado = String.format("O valor e %.2f", valor); // 123.46
+		
+		
+		// Remover espaços em branco no início e no final de uma String
+		
+		String texto = "    Espacos em branco no início e no final    ";
+		String textoTrimmed = texto.trim(); // "Espaços em branco no início e no final"
+		
+		// 8 - USO DE OPERADORES COM STRING
+		
+		String saudacao = "Ola, ";
+		String nome = "Alice";
+		String mensagem1 = saudacao + nome;
+		System.out.println (mensagem); // "Ola, Alice"
+		
+		// 9 - PERCORRENDO OS CARACTERES DE UMA STRING 
+		
+		String minhaString = "Exemplo de String";
+		
+		// Usando um loop for para percorrer os caracteres  
+		
+		for (int i = 0; i < minhaString.length(); i++) {
+			char caractere = minhaString.charAt(i);
+			System.out.print(caractere + " ");
+		}
+		
+		for (char caractere : minhaString.toCharArray()) {
+			System.out.print(caractere + " ");
+		}
+
+	}
+}
