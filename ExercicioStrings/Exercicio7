@@ -1,0 +1,18 @@
+package Strings;
+
+public class Exercicio07String {
+	public static void main(String[] args) {
+			
+			String string = "teste 123";
+			System.out.println("String original: " + string);
+			
+			System.out.println("\nString sem espaços: " + string.trim() );
+			
+			string = string.replaceAll("\\s+", " ");
+			System.out.println("\n" + string);
+				
+			
+			
+		}
+	}
+
