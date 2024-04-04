@@ -1,0 +1,39 @@
+package Strings;
+import java.util.Scanner;
+
+public class Exercicio06String {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite a primeira String: ");
+		String string1 = scanner.next();
+		
+		System.out.println("Digite a segunda String: ");
+		String string2 = scanner.next();
+		
+		System.out.println("Digite a terceira String: ");
+		String string3 = scanner.next();
+		
+		int tamanhoString1 = string1.trim().length();
+		int tamanhoString2 = string2.trim().length();
+		int tamanhoString3 = string3.trim().length();
+		
+		
+		if (tamanhoString1 > tamanhoString2 & tamanhoString1 > tamanhoString3) {
+			System.out.println("A string " + string1 + " tem " + tamanhoString1 + " caracteres.");
+		}
+		
+		if (tamanhoString2 > tamanhoString1 & tamanhoString2 > tamanhoString3) {
+			System.out.println("A string " + string2 + " tem " + tamanhoString2 + " caracteres.");
+		}
+		
+		if (tamanhoString3 > tamanhoString1 & tamanhoString3 > tamanhoString2) {
+			System.out.println("A string " + string3 + " tem " + tamanhoString3 + " caracteres.");
+		}
+		
+		scanner.close();
+	
+
+	}
+}
