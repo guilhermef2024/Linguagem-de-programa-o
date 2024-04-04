@@ -1,0 +1,45 @@
+package Arrays;
+
+public class ExemplosArray {
+	public static void main(String[] args) {
+		
+		
+		// DECLARAÇÃO BÁSICA DE UM ARRAY
+		
+		tipoDeDado[] nomeDoArray;
+		
+		// Array com 4 inteiros 
+		
+		int[] a = new int [4];
+		
+		// Array com 10 char
+				
+		char b;
+		b = new char[10];
+		
+		// Array de inteiros com 9 elementos já definidos
+				
+		int[] c = {12,32,54,6,8,89,64,64,6};
+				
+		// MANIPULAÇÃO DE ARRAYS
+		
+		// Atribuindo e Recuperando dados de Arrays
+		
+		
+		int[] num = new int[5];
+		num[0] = 5; // Atribui o valor 5 para o primeiro elemento
+		num[3] = 4; // Atribui o valor 4 para o quarto elemento
+				
+		int valor1 = num[0]; // Salva o valor do primeiro elemento do Array na variável valor 1
+		System.out.println(num[3]); // Imprime o valor do quarto elemento do array
+				
+		// PERCORRENDO ARRAYS
+		
+		int[] numeros = {10,20,30,40,50};
+		for (int i = 0; i < numeros.length; i++) {
+		System.out.println(numeros[i]); // Imprime cada elemento do array
+				}
+			
+	}
+
+}
