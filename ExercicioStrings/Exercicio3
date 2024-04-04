@@ -1,0 +1,29 @@
+package Strings;
+import java.util.Scanner;
+
+public class Exercicio03String {
+	public static void main(String[] args) {
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite o nome da Cidade: ");
+		String cidade = scanner.next();
+		
+		
+		switch (cidade){
+		
+		case "Curitiba":
+			System.out.println("O nome da cidade é Curitiba.");
+			break;
+		
+		default:
+			System.out.println("A cidade não é Curitiba.");
+			break;
+		}
+		
+		scanner.close();
+		
+	}
+	
+}
