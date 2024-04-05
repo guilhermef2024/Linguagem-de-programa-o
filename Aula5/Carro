@@ -1,0 +1,36 @@
+package Aula05;
+
+public class Carro {
+	
+	// Atributo
+	
+	private String marca;
+	
+	// Construtor
+	
+	public Carro(String marca) {
+		this.marca = marca;
+		
+	}
+	
+	// Método para ligar o carro
+	
+	public void ligar() {
+		System.out.println("O carro da marca " + marca + " está ligado.");
+		
+	}
+	
+		// Método  principal (ponto de entrada do programa)
+		
+		public static void main(String[] args) {
+			
+			//Criando um objeto da classe Carro
+			Carro meuCarro = new Carro ("Toyota");
+			
+			// Chamando o método para ligar o carro
+			
+			meuCarro.ligar();
+		}
+		
+	}
+	
