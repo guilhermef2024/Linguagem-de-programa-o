@@ -1,0 +1,47 @@
+package Aula05;
+
+public class Professor {
+
+	// Atributos
+	
+	private String nome;
+	private int idade;
+	private String disciplina;
+	
+	// Construtor
+	
+	public Professor(String nome, int idade, String disciplina) {
+		this.nome = nome;
+		this.idade = idade;
+		this.disciplina = disciplina;
+	}
+	
+	// Método para apresentar o professor
+	
+	public void apresentar () {
+		System.out.println("Olá, eu sou o professor " + nome + " e tenho " + idade + " anos. Ensino " + disciplina + ".");
+		
+	}
+	
+	// Método para ensinar
+	
+	public void ensinar() {
+		System.out.println("Hoje vamos aprender sobre " + disciplina +".");
+	}
+	
+	// Método principal (ponto de entrada do programa)
+	
+	public static void main(String[] args) {
+		
+		// Criando um objeto da classe Professor
+		
+		Professor meuProfessor = new Professor("Lucas" , 33, "Java");
+		
+		// Chamando métodos do objeto
+		
+		meuProfessor.apresentar();
+		meuProfessor.ensinar();
+		
+		
+	}
+}
